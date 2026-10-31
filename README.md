@@ -8,6 +8,23 @@ Written in *pure C* using only... ***message boxes***?
 
 ---
 
+## Features
+- The gameplay of this game is just a *Windows message boxes*.
+- No, really, it's just a message boxes.
+- Nothing really special.
+- I just used `MessageBox()` function many times.
+- ...I think I just don't know what can I put in the Features section.
+
+## Controls
+| Controls         | Action         |
+| ---------------- | -------------- |
+| Left Mouse Click | Click          |
+| Mouse Click Left | Press          |
+| Left Click Mouse | Press or Click |
+| Click Left Mouse | Click or Press |
+
+---
+
 ## Arni
 ```text
 |\__/ |  ( )
