@@ -5,11 +5,12 @@ void lose(void);
 void win(void);
 
 int main(void) {
-  if (!level(1)) {lose(); return 0;}
-  if (!level(2)) {lose(); return 0;}
-  if (!level(3)) {lose(); return 0;}
-  // keep going...
-  if (!level(100)) {lose(); return 0;}
+  for (size_t i = 1; i <= 100; i++) {
+    if (!level(i)) {
+      lose();
+      return 0;
+    }
+  }
 
   win();
   return 0;
