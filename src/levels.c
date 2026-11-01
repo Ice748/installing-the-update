@@ -107,17 +107,17 @@ int level(int number) {
       if (MessageBox(NULL, "Introducing, the CANCEL button!\nClick it to continue.", "cool_game.exe (LEVEL 33)", MB_YESNOCANCEL | MB_ICONINFORMATION) == IDCANCEL) return 1;
       else return 0;
     case 34:
-      if (MessageBox(NULL, "Stopping the installation...\n(Click CANCEL in these situations)", "cool_game.exe (LEVEL 34)", MB_YESNOCANCEL | MB_ICONEXCLANATION) == IDCANCEL) return 1;
+      if (MessageBox(NULL, "Stopping the installation...\n(Click CANCEL in these situations)", "cool_game.exe (LEVEL 34)", MB_YESNOCANCEL | MB_ICONEXCLAMATION) == IDCANCEL) return 1;
       else return 0;
     case 35:
-      if (MessageBox(NULL, "Deleting system32...", "cool_game.exe (LEVEL 35)", MB_YESNOCANCEL | MB_ICONEXCLANATION) == IDCANCEL) return 1;
+      if (MessageBox(NULL, "Deleting system32...", "cool_game.exe (LEVEL 35)", MB_YESNOCANCEL | MB_ICONEXCLAMATION) == IDCANCEL) return 1;
       else return 0;
     case 36:
-      if (MessageBox(NULL, "Erasing the progress...", "cool_game.exe (LEVEL 36)", MB_YESNOCANCEL | MB_ICONEXCLANATION) == IDCANCEL) return 1;
+      if (MessageBox(NULL, "Erasing the progress...", "cool_game.exe (LEVEL 36)", MB_YESNOCANCEL | MB_ICONEXCLAMATION) == IDCANCEL) return 1;
       else return 0;
     case 37:
       MessageBox(NULL, "Good job!\nYou can use the CANCEL button now!", "cool_game.exe (LEVEL 37)", MB_OK | MB_ICONINFORMATION);
-      return 0;
+      return 1;
 
     case 38:
       if (MessageBox(NULL, "Btw, did you even count the levels?\n\nYES:    36\nNO:     37\nCANCEL: 38", "cool_game.exe (LEVEL ?)", MB_YESNOCANCEL | MB_ICONQUESTION) == IDCANCEL) return 1;
@@ -176,7 +176,7 @@ int level(int number) {
       if (MessageBox(NULL, "I think I'll just repeat the hardest question. (In my opinion)\nWhat is the number of this level?\n\nYES:    55\nNO:     56\nCANCEL: 57", "cool_game.exe (LEVEL ?)", MB_YESNOCANCEL | MB_ICONQUESTION) == IDYES) return 1;
       else return 0;
     case 56:
-      MessageBox(NULL, "Impressive... But I still have no idea what can I put next...", "cool_game.exe (LEVEL 54)", MB_OK | MB_ICONINFORMATION);
+      MessageBox(NULL, "Impressive... But I still have no idea what can I put next...", "cool_game.exe (LEVEL 56)", MB_OK | MB_ICONINFORMATION);
       return 1;
 
     case 57:
@@ -236,11 +236,11 @@ int level(int number) {
       if (MessageBox(NULL, "Is this level a question?", "cool_game.exe (LEVEL 74)", MB_YESNO | MB_ICONINFORMATION) == IDNO) return 1;
       else return 0;
     case 75:
-      MessageBox(NULL, "Ha! It was the tricky question!\n25 levels left!!", "cool_game.exe (LEVEL 71)", MB_OK | MB_ICONINFORMATION);
+      MessageBox(NULL, "Ha! It was the tricky question!\n25 levels left!!", "cool_game.exe (LEVEL 75)", MB_OK | MB_ICONINFORMATION);
       return 1;
     case 76:
       if (MessageBox(NULL, "Wait... (;<\nWhat is the number of this level?\n\nYES:    75\nNO:     76\nCANCEL: 77\n\nOh, wait, I forget to remove it...", "cool_game.exe (LEVEL 76)", MB_YESNOCANCEL | MB_ICONQUESTION) == IDNO) return 1;
-      else {MessageBox(NULL, "Bruh. How did you even lose it?", "cool_game.exe (LEVEL 76)", MB_OK | MB_ICONEXCLANATION); return 0;}
+      else {MessageBox(NULL, "Bruh. How did you even lose it?", "cool_game.exe (LEVEL 76)", MB_OK | MB_ICONEXCLAMATION); return 0;}
     case 77:
       if (MessageBox(NULL, "Is 77 a prime number?", "cool_game.exe (LEVEL 77)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
       else return 0;
@@ -279,8 +279,42 @@ int level(int number) {
       MessageBox(NULL, "I didn't wrote them, so answer the really carefully!", "cool_game.exe (LEVEL 88)", MB_OK | MB_ICONINFORMATION);
       return 1;
     case 89:
-      MessageBox(NULL, "I'll see you after the 100th level!", "cool_game.exe (LEVEL 89)", MB_OK | MB_ICONINFORMATION);
+      MessageBox(NULL, "I'll see you after the 100th level!\nGood luck!", "cool_game.exe (LEVEL 89)", MB_OK | MB_ICONINFORMATION);
       return 1;
+
+    case 90:
+      if (MessageBox(NULL, "Do you not want to not to install the update?", "cool_game.exe (! LEVEL 90 !)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
+      else return 0;
+    case 91:
+      if (MessageBox(NULL, "Do you really not want to not to not to install the update?", "cool_game.exe (! LEVEL 91 !)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else return 0;
+    case 92:
+      if (MessageBox(NULL, "Do you really really want to not to not to not to install the update?", "cool_game.exe (! LEVEL 92 !)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else return 0;
+    case 93:
+      if (MessageBox(NULL, "Do you really really really not want to not to not to not to install the update?", "cool_game.exe (! LEVEL 93 !)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
+      else return 0;
+    case 94:
+      if (MessageBox(NULL, "Do you really really really really not want to not to not to not to not to not to install the update?", "cool_game.exe (! LEVEL 94 !)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
+      else return 0;
+    case 95:
+      if (MessageBox(NULL, "Do you really really really really really want to not to not not to not to not to not to install the update?", "cool_game.exe (! LEVEL 95 !)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
+      else return 0;
+    case 96:
+      if (MessageBox(NULL, "Do you really really really really really really not want to not to not to not to not to not to not to not to not to install the update?", "cool_game.exe (! LEVEL 96 !)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else return 0;
+    case 97:
+      if (MessageBox(NULL, "Do you really really really really really really not want to not to not to not to not to not to not to not to not to not to not to not to not to install the update?", "cool_game.exe (! LEVEL 97 !)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else return 0;
+    case 98:
+      if (MessageBox(NULL, "Do you really really really really really really want to not to not to not to not to not to not to not to not to not to not to not to not to not to not to not to not to not to not to install the update?", "cool_game.exe (! LEVEL 98 !)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
+      else return 0;
+    case 99:
+      if (MessageBox(NULL, "Do you really really really really really really not want to not to not to not to not to not to not to not to not to not to not to not to not to not to not to not to not to not to not to not to not to not to not to install the update?", "cool_game.exe (! LEVEL 99 !)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else return 0;
+    case 100:
+      if (MessageBox(NULL, "Do you want to install the update?", "cool_game.exe (!!! LEVEL 100 !!!)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
+      else MessageBox(NULL, "I think you meant YES.", "cool_game.exe (!!! LEVEL 100 !!!)", MB_OK | MB_ICONINFORMATION); return 1;
 
     default:
       MessageBox(NULL, "Bruh, how did you get there? O_o", "Installing the Update", MB_OK | MB_ICONERROR);
