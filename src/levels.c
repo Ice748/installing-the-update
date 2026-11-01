@@ -100,8 +100,24 @@ int level(int number) {
       MessageBox(NULL, "Phew... Good job.\nYou actually have fast reactions.", "cool_game.exe (LEVEL 31)", MB_OK | MB_ICONINFORMATION);
       return 1;
     case 32:
-      if (MessageBox(NULL, "Btw this is the 2^5 question, right?", "cool_game.exe (LEVEL 32)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
-      else return 0; 
+      if (MessageBox(NULL, "Btw this is the 2^5 level, right?", "cool_game.exe (LEVEL 32)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
+      else return 0;
+
+    case 33:
+      if (MessageBox(NULL, "Introducing, the CANCEL button!\nClick it to continue.", "cool_game.exe (LEVEL 33)", MB_YESNOCANCEL | MB_ICONINFORMATION) == IDCANCEL) return 1;
+      else return 0;
+    case 34:
+      if (MessageBox(NULL, "Stopping the installation...\n(Click CANCEL in these situations)", "cool_game.exe (LEVEL 34)", MB_YESNOCANCEL | MB_ICONEXCLANATION) == IDCANCEL) return 1;
+      else return 0;
+    case 35:
+      if (MessageBox(NULL, "Deleting system32...", "cool_game.exe (LEVEL 35)", MB_YESNOCANCEL | MB_ICONEXCLANATION) == IDCANCEL) return 1;
+      else return 0;
+    case 36:
+      if (MessageBox(NULL, "Erasing the progress...", "cool_game.exe (LEVEL 36)", MB_YESNOCANCEL | MB_ICONEXCLANATION) == IDCANCEL) return 1;
+      else return 0;
+    case 37:
+      MessageBox(NULL, "Good job!\nYou can use the CANCEL button now!", "cool_game.exe (LEVEL 37)", MB_OK | MB_ICONINFORMATION);
+      return 0;
 
     default:
       MessageBox(NULL, "Bruh, how did you get there? O_o", "Installing the Update", MB_OK | MB_ICONERROR);
