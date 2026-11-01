@@ -245,6 +245,43 @@ int level(int number) {
       if (MessageBox(NULL, "Is 77 a prime number?", "cool_game.exe (LEVEL 77)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
       else return 0;
 
+    case 78:
+      MessageBox(NULL, "7 x 11 = 77. Get it? No?\nOkay.", "cool_game.exe (LEVEL 78)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 79:
+      MessageBox(NULL, "79.\nAlmost 80.\nI can feel the finish line.\nActually no, I can't, 21 levels is a lot.", "cool_game.exe (LEVEL 79)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 80:
+      MessageBox(NULL, "LEVEL 80!\n20 more to go!\nIf you've made it this far, you're officially cool.", "cool_game.exe (LEVEL 80)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 81:
+      if (MessageBox(NULL, "Do fish get thirsty?", "cool_game.exe (LEVEL 81)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else return 0;
+    case 82:
+      MessageBox(NULL, "Correct. They don't drink like we do.\nNext.", "cool_game.exe (LEVEL 82)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 83:
+      if (MessageBox(NULL, "Are we there yet?", "cool_game.exe (LEVEL 83)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else { MessageBox(NULL, "No. Level 83. I literally just told you.", "cool_game.exe", MB_OK | MB_ICONERROR); return 0; }
+    case 84:
+      if (MessageBox(NULL, "How about now?", "cool_game.exe (LEVEL 84)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else { MessageBox(NULL, "Still no. Level 84.", "cool_game.exe", MB_OK | MB_ICONERROR); return 0; }
+    case 85:
+      MessageBox(NULL, "15 to go!", "cool_game.exe (LEVEL 85)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 86:
+      MessageBox(NULL, "WAIT, listen carefully.", "cool_game.exe (LEVEL 86)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 87:
+      MessageBox(NULL, "90-99 levels are really, REALLY tricky!", "cool_game.exe (LEVEL 87)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 88:
+      MessageBox(NULL, "I didn't wrote them, so answer the really carefully!", "cool_game.exe (LEVEL 88)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 89:
+      MessageBox(NULL, "I'll see you after the 100th level!", "cool_game.exe (LEVEL 89)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+
     default:
       MessageBox(NULL, "Bruh, how did you get there? O_o", "Installing the Update", MB_OK | MB_ICONERROR);
       return 0;
