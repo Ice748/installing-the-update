@@ -20,6 +20,7 @@ int level(int number) {
     case 6:
       MessageBox(NULL, "Prove it.", "cool_game.exe (LEVEL 6)", MB_OK | MB_ICONINFORMATION);
       return 1;
+
     case 7:
       if (MessageBox(NULL, "Is tomato botanically classified as a vegetable?", "cool_game.exe (LEVEL 7)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
       else return 0;
@@ -38,6 +39,7 @@ int level(int number) {
     case 12:
       MessageBox(NULL, "...But not enough.\n(This game is turning into a quiz right now XD,\ndont't worry, it's not for long)", "cool_game.exe (LEVEL 12)", MB_OK | MB_ICONINFORMATION);
       return 1;
+
     case 13:
       if (MessageBox(NULL, "Is the Great Wall of China visible from space with the naked eye?", "cool_game.exe (LEVEL 13)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
       else return 0;
@@ -62,6 +64,7 @@ int level(int number) {
     case 20:
       MessageBox(NULL, "Quiz is over.\nLet's get back to the actual installation.", "cool_game.exe (LEVEL 20)", MB_OK | MB_ICONINFORMATION);
       return 1;
+
     case 21:
       if (MessageBox(NULL, "Click YES to uninstall the game.\nClick NO to continue the setup.", "cool_game.exe (LEVEL 21)", MB_YESNO | MB_ICONEXCLAMATION) == IDNO) return 1;
       else return 0;
@@ -75,7 +78,33 @@ int level(int number) {
       if (MessageBox(NULL, "Don't click YES if you don't want to not to not to win.", "cool_game.exe (LEVEL 24)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
       else return 0;
     case 25:
-      if (MessageBox(NULL, "Click YES to test if the button is working.", "cool_game.exe (LEVEL 26)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
-      else MessageBox(NULL, "Why did you clicked 'No'??\nNow the game would crassshhhshsshhshsshhshhhssshhhshssshshhshshs", "Fatal Error", MB_OK | MB_ICONERROR); return 0;
+      if (MessageBox(NULL, "Click YES to test if the button is working.", "cool_game.exe (LEVEL 25)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
+      else {MessageBox(NULL, "Why did you clicked No??\nNow the game would crassshhhshsshhshsshhshhhssshhhshssshshhshshs", "Fatal Error", MB_OK | MB_ICONERROR); return 0;}
+    case 26:
+      MessageBox(NULL, "Deleting system32...\nJust kidding.", "cool_game.exe (LEVEL 26)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+
+    case 27:
+      if (MessageBox(NULL, "Click YES to confirm you are still here.", "cool_game.exe (LEVEL 27)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
+      else return 0;
+    case 28:
+      if (MessageBox(NULL, "Click YES again.", "cool_game.exe (LEVEL 28)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
+      else return 0;
+    case 29:
+      if (MessageBox(NULL, "Click YES one more time.", "cool_game.exe (LEVEL 29)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
+      else return 0;
+    case 30:
+      if (MessageBox(NULL, "WAIT! CLICK NO RIGHT NOW!!!", "cool_game.exe (LEVEL 30)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else {MessageBox(NULL, "I TOLD YOU TO CLICK NO! ):<", "cool_game.exe", MB_OK | MB_ICONERROR); return 0;}
+    case 31:
+      MessageBox(NULL, "Phew... Good job.\nYou actually have fast reactions.", "cool_game.exe (LEVEL 31)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 32:
+      if (MessageBox(NULL, "Btw this is the 2^5 question.", "cool_game.exe (LEVEL 32)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
+      else return 0; 
+
+    default:
+      MessageBox(NULL, "Bruh, how did you get there? ._.", "Installing the Update", MB_OK | MB_ICONERROR);
+      return 0;
   }
 }
