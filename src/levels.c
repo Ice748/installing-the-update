@@ -179,6 +179,22 @@ int level(int number) {
       MessageBox(NULL, "Impressive... But I still have no idea what can I put next...", "cool_game.exe (LEVEL 54)", MB_OK | MB_ICONINFORMATION);
       return 1;
 
+    case 57:
+      if (MessageBox(NULL, "Is a peanut actually a nut?", "cool_game.exe (LEVEL 57)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else return 0;
+    case 58:
+      MessageBox(NULL, "Correct! It's a legume.\nSee? I can still make questions.", "cool_game.exe (LEVEL 58)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 59:
+      if (MessageBox(NULL, "Um, is tomato botanically classified as a berry?", "cool_game.exe (LEVEL 7)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
+      else return 0;
+    case 60:
+      MessageBox(NULL, "CORRECT! It's a berry.\nSee? I can still make ques- oh wait, it's just a level 7...\nI even forget to change the level number of the past level while copying it...", "cool_game.exe (LEVEL 60)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 61:
+      MessageBox(NULL, "Nevermind.", "cool_game.exe (LEVEL 61)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+
     default:
       MessageBox(NULL, "Bruh, how did you get there? O_o", "Installing the Update", MB_OK | MB_ICONERROR);
       return 0;
