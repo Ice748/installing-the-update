@@ -120,7 +120,7 @@ int level(int number) {
       return 1;
 
     case 38:
-      if (MessageBox(NULL, "Btw, did you even count the levels?\n\nYES:    36\nNO:     37\nCANCEL: 38", "cool_game.exe (LEVEL ?)", MB_YESNOCANCEL | MB_ICONQUESTION) == IDCANCEL) return 1;
+      if (MessageBox(NULL, "Btw, did you even count the levels?\n\nYES: 36\nNO: 37\nCANCEL: 38", "cool_game.exe (LEVEL ?)", MB_YESNOCANCEL | MB_ICONQUESTION) == IDCANCEL) return 1;
       else return 0;
     case 39:
       MessageBox(NULL, "That was actually really tricky question, isn't it?\nMay not answer.", "cool_game.exe (LEVEL 39)", MB_OK | MB_ICONINFORMATION);
@@ -173,7 +173,7 @@ int level(int number) {
       MessageBox(NULL, "Um, so, as I said before, I have no idea what can I put in the next levels...", "cool_game.exe (LEVEL 54)", MB_OK | MB_ICONINFORMATION);
       return 1;
     case 55:
-      if (MessageBox(NULL, "I think I'll just repeat the hardest question. (In my opinion)\nWhat is the number of this level?\n\nYES:    55\nNO:     56\nCANCEL: 57", "cool_game.exe (LEVEL ?)", MB_YESNOCANCEL | MB_ICONQUESTION) == IDYES) return 1;
+      if (MessageBox(NULL, "I think I'll just repeat the hardest question. (In my opinion)\nWhat is the number of this level?\n\nYES: 55\nNO: 56\nCANCEL: 57", "cool_game.exe (LEVEL ?)", MB_YESNOCANCEL | MB_ICONQUESTION) == IDYES) return 1;
       else return 0;
     case 56:
       MessageBox(NULL, "Impressive... But I still have no idea what can I put next...", "cool_game.exe (LEVEL 56)", MB_OK | MB_ICONINFORMATION);
@@ -239,7 +239,7 @@ int level(int number) {
       MessageBox(NULL, "Ha! It was the tricky question!\n25 levels left!!", "cool_game.exe (LEVEL 75)", MB_OK | MB_ICONINFORMATION);
       return 1;
     case 76:
-      if (MessageBox(NULL, "Wait... (;<\nWhat is the number of this level?\n\nYES:    75\nNO:     76\nCANCEL: 77\n\nOh, wait, I forget to remove it...", "cool_game.exe (LEVEL 76)", MB_YESNOCANCEL | MB_ICONQUESTION) == IDNO) return 1;
+      if (MessageBox(NULL, "Wait... (;<\nWhat is the number of this level?\n\nYES: 75\nNO: 76\nCANCEL: 77\n\nOh, wait, I forget to remove it...", "cool_game.exe (LEVEL 76)", MB_YESNOCANCEL | MB_ICONQUESTION) == IDNO) return 1;
       else {MessageBox(NULL, "Bruh. How did you even lose it?", "cool_game.exe (LEVEL 76)", MB_OK | MB_ICONEXCLAMATION); return 0;}
     case 77:
       if (MessageBox(NULL, "Is 77 a prime number?", "cool_game.exe (LEVEL 77)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
