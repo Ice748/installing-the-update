@@ -33,7 +33,28 @@ int level(int number) {
       if (MessageBox(NULL, "Is the Sahara the largest desert on Earth?", "cool_game.exe (LEVEL 10)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
       else return 0;
     case 11:
-      MessageBox(NULL, "Wow, you're kinda smart.", "cool_game.exe (LEVEL 11)", MB_OK | MB_ICONINFORMATION);
+      MessageBox(NULL, "Wow, you're kinda smart...", "cool_game.exe (LEVEL 11)", MB_OK | MB_ICONINFORMATION);
       return 1;
+    case 12:
+      MessageBox(NULL, "...But not enough.\n(This game is turning into a quiz right now XD,\ndont't worry, it's not for long)", "cool_game.exe (LEVEL 12)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 13:
+      if (MessageBox(NULL, "Is the Great Wall of China visible from space with the naked eye?", "cool_game.exe (LEVEL 13)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else return 0;
+    case 14:
+      if (MessageBox(NULL, "Is sound able to travel through the vacuum of space?", "cool_game.exe (LEVEL 14)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else return 0;
+    case 15:
+      if (MessageBox(NULL, "Do sharks have bones in their bodies?", "cool_game.exe (LEVEL 15)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else return 0;
+    case 16:
+      if (MessageBox(NULL, "Do human ears ever stop growing during a person's life?", "cool_game.exe (LEVEL 16)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else return 0;
+    case 17:
+      if (MessageBox(NULL, "Do humans share about 50% of their DNA with bananas?", "cool_game.exe (LEVEL 17)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
+      else return 0;
+    case 18:
+      if (MessageBox(NULL, "Do you want to finish this game right now?", "cool_game.exe (LEVEL 18)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else return 0;
   }
 }
