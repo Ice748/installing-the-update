@@ -276,7 +276,7 @@ int level(int number) {
       MessageBox(NULL, "90-99 levels are really, REALLY tricky!", "cool_game.exe (LEVEL 87)", MB_OK | MB_ICONINFORMATION);
       return 1;
     case 88:
-      MessageBox(NULL, "I didn't wrote them, so answer the really carefully!", "cool_game.exe (LEVEL 88)", MB_OK | MB_ICONINFORMATION);
+      MessageBox(NULL, "I didn't wrote them, so answer them really carefully!", "cool_game.exe (LEVEL 88)", MB_OK | MB_ICONINFORMATION);
       return 1;
     case 89:
       MessageBox(NULL, "I'll see you after the 100th level!\nGood luck!", "cool_game.exe (LEVEL 89)", MB_OK | MB_ICONINFORMATION);
