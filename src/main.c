@@ -20,6 +20,6 @@ void lose(void) {
 }
 
 void win(void) {
-  MessageBox(NULL, "YOU WIN! 🏆\nYou finally install the update.", "cool_game.exe", MB_OK | MB_ICONINFORMATION);
+  MessageBox(NULL, "YOU WIN!\nYou finally install the update.", "cool_game.exe", MB_OK | MB_ICONINFORMATION);
   MessageBox(NULL, "Installing the Update\n\nA game by Ice748\nWritten in C\nBuilt on Github\n\nThanks for playing! (:", "credits.exe", MB_OK | MB_ICONINFORMATION);
 }
