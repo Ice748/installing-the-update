@@ -138,6 +138,37 @@ int level(int number) {
       MessageBox(NULL, "Let's go back to quiz!", "cool_game.exe (LEVEL 43)", MB_OK | MB_ICONINFORMATION);
       return 1;
 
+    case 44:
+      if (MessageBox(NULL, "Do bananas grow on trees?", "cool_game.exe (LEVEL 44)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else return 0;
+    case 45:
+      if (MessageBox(NULL, "Do you NOT want to stop playing?", "cool_game.exe (LEVEL 45)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
+      else return 0;
+    case 46:
+      MessageBox(NULL, "Level 46.\nStill here? Impressive.", "cool_game.exe (LEVEL 46)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 47:
+      if (MessageBox(NULL, "Is Mount Everest the tallest mountain on Earth when measured from base to peak?", "cool_game.exe (LEVEL 47)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else return 0;
+    case 48:
+      if (MessageBox(NULL, "This is a trick question.\nClick YES.", "cool_game.exe (LEVEL 48)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else return 0;
+    case 49:
+      if (MessageBox(NULL, "Do octopuses have three hearts?", "cool_game.exe (LEVEL 49)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
+      else return 0;
+    case 50:
+      MessageBox(NULL, "LEVEL 50!\nHalfway to 100!\nI still have no idea what to put in levels 54-99...", "cool_game.exe (LEVEL 50)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 51:
+      if (MessageBox(NULL, "QUICK! Click NO before you overthink it!", "cool_game.exe (LEVEL 51)", MB_YESNO | MB_ICONEXCLAMATION) == IDNO) return 1;
+      else {MessageBox(NULL, "You clicked YES...\nWhy?!", "cool_game.exe", MB_OK | MB_ICONERROR); return 0;}
+    case 52:
+      if (MessageBox(NULL, "Are spiders insects?", "cool_game.exe (LEVEL 52)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else return 0;
+    case 53:
+      if (MessageBox(NULL, "Only 47 more levels to go!\nDo you want to keep going?", "cool_game.exe (LEVEL 53)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
+      else return 0;
+
     default:
       MessageBox(NULL, "Bruh, how did you get there? O_o", "Installing the Update", MB_OK | MB_ICONERROR);
       return 0;
