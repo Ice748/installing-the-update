@@ -169,6 +169,16 @@ int level(int number) {
       if (MessageBox(NULL, "Only 47 more levels to go!\nDo you want to keep going?", "cool_game.exe (LEVEL 53)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
       else return 0;
 
+    case 54:
+      MessageBox(NULL, "Um, so, as I said before, I have no idea what can I put in the next levels...", "cool_game.exe (LEVEL 54)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 55:
+      if (MessageBox(NULL, "I think I'll just repeat the hardest question. (In my opinion)\nWhat is the number of this level?\n\nYES:    55\nNO:     56\nCANCEL: 57", "cool_game.exe (LEVEL ?)", MB_YESNOCANCEL | MB_ICONQUESTION) == IDYES) return 1;
+      else return 0;
+    case 56:
+      MessageBox(NULL, "Impressive... But I still have no idea what can I put next...", "cool_game.exe (LEVEL 54)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+
     default:
       MessageBox(NULL, "Bruh, how did you get there? O_o", "Installing the Update", MB_OK | MB_ICONERROR);
       return 0;
