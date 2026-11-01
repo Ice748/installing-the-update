@@ -81,7 +81,7 @@ int level(int number) {
       if (MessageBox(NULL, "Click YES to test if the button is working.", "cool_game.exe (LEVEL 25)", MB_YESNO | MB_ICONEXCLAMATION) == IDYES) return 1;
       else {MessageBox(NULL, "Why did you clicked No??\nNow the game would crassshhhshsshhshsshhshhhssshhhshssshshhshshs", "Fatal Error", MB_OK | MB_ICONERROR); return 0;}
     case 26:
-      MessageBox(NULL, "Deleting system32...\nJust kidding.", "cool_game.exe (LEVEL 26)", MB_OK | MB_ICONINFORMATION);
+      MessageBox(NULL, "Deleting system32...\nJust kidding.", "cool_game.exe (LEVEL 26)", MB_OK | MB_ICONEXCLAMATION);
       return 1;
 
     case 27:
