@@ -1,7 +1,5 @@
 <div align="center">
 
-<img width="1280" height="640" alt="Installing the Update Logo" src="https://github.com/user-attachments/assets/36334e93-3244-422f-86ce-12a1435f4ce3" />
-
 # Installing the Update
 A game about installing the update.  
 Written in *pure C* using only... ***message boxes***?
