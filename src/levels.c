@@ -119,6 +119,25 @@ int level(int number) {
       MessageBox(NULL, "Good job!\nYou can use the CANCEL button now!", "cool_game.exe (LEVEL 37)", MB_OK | MB_ICONINFORMATION);
       return 0;
 
+    case 38:
+      if (MessageBox(NULL, "Btw, did you even count the levels?\n\nYES:    36\nNO:     37\nCANCEL: 38", "cool_game.exe (LEVEL ?)", MB_YESNOCANCEL | MB_ICONQUESTION) == IDCANCEL) return 1;
+      else return 0;
+    case 39:
+      MessageBox(NULL, "That was actually really tricky question, isn't it?\nMay not answer.", "cool_game.exe (LEVEL 39)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 40:
+      MessageBox(NULL, "This is still a game about installing the update.\nI just don't want you to install the update until the level 100...\n...and i just don't know what can I put in those levels.", "cool_game.exe (LEVEL 40)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 41:
+      if (MessageBox(NULL, "If you tired of this game, you can just quit.\nI can do it for you, if you want to quit, just press YES, if you want to continue, press NO.\nYou'll quit without this annoying LOSE window.", "cool_game.exe (LEVEL 41)", MB_YESNO | MB_ICONINFORMATION) == IDYES) exit(0);
+      else return 1;
+    case 42:
+      MessageBox(NULL, "OK, you didn't left.\nGood! I- I think...", "cool_game.exe (LEVEL 42)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 43:
+      MessageBox(NULL, "Let's go back to quiz!", "cool_game.exe (LEVEL 43)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+
     default:
       MessageBox(NULL, "Bruh, how did you get there? O_o", "Installing the Update", MB_OK | MB_ICONERROR);
       return 0;
