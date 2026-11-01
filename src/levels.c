@@ -104,7 +104,7 @@ int level(int number) {
       else return 0; 
 
     default:
-      MessageBox(NULL, "Bruh, how did you get there? ._.", "Installing the Update", MB_OK | MB_ICONERROR);
+      MessageBox(NULL, "Bruh, how did you get there? O_o", "Installing the Update", MB_OK | MB_ICONERROR);
       return 0;
   }
 }
