@@ -195,6 +195,25 @@ int level(int number) {
       MessageBox(NULL, "Nevermind.", "cool_game.exe (LEVEL 61)", MB_OK | MB_ICONINFORMATION);
       return 1;
 
+    case 62:
+      if (MessageBox(NULL, "Quick check: is this level 62?", "cool_game.exe (LEVEL 62)", MB_YESNO | MB_ICONQUESTION) == IDYES) return 1;
+      else return 0;
+    case 63:
+      MessageBox(NULL, "Only 37 levels left! Keep going!", "cool_game.exe (LEVEL 63)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 64:
+      MessageBox(NULL, "This is the level 64!\nI just don't know what can I put here, one more time.\nAlso, 64 is 2^6.", "cool_game.exe (LEVEL 64)", MB_OK | MB_ICONINFORMATION)
+      return 1;
+    case 65:
+      MessageBox(NULL, "This is a cool level! :D\n(I completely ran out of ideas...)", "cool_game.exe (LEVEL 65)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 66:
+      MessageBox(NULL, "Wait, just- just wait...", "cool_game.exe", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 67:
+      MessageBox(NULL, "67 LOL 67 67 LOL HAHAHA\n> Cringe joined the game.\n> Ice748 was slain by Cringe using Cringe joke.", "cool_game.exe (LEVEL 67)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+
     default:
       MessageBox(NULL, "Bruh, how did you get there? O_o", "Installing the Update", MB_OK | MB_ICONERROR);
       return 0;
