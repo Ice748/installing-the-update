@@ -202,17 +202,48 @@ int level(int number) {
       MessageBox(NULL, "Only 37 levels left! Keep going!", "cool_game.exe (LEVEL 63)", MB_OK | MB_ICONINFORMATION);
       return 1;
     case 64:
-      MessageBox(NULL, "This is the level 64!\nI just don't know what can I put here, one more time.\nAlso, 64 is 2^6.", "cool_game.exe (LEVEL 64)", MB_OK | MB_ICONINFORMATION)
+      MessageBox(NULL, "This is the level 64!\nI just don't know what can I put here, one more time.\nAlso, 64 is 2^6.", "cool_game.exe (LEVEL 64)", MB_OK | MB_ICONINFORMATION);
       return 1;
     case 65:
       MessageBox(NULL, "This is a cool level! :D\n(I completely ran out of ideas...)", "cool_game.exe (LEVEL 65)", MB_OK | MB_ICONINFORMATION);
       return 1;
     case 66:
-      MessageBox(NULL, "Wait, just- just wait...", "cool_game.exe", MB_OK | MB_ICONINFORMATION);
+      MessageBox(NULL, "Wait, just- just wait...", "cool_game.exe (LEVEL 66)", MB_OK | MB_ICONINFORMATION);
       return 1;
     case 67:
       MessageBox(NULL, "67 LOL 67 67 LOL HAHAHA\n> Cringe joined the game.\n> Ice748 was slain by Cringe using Cringe joke.", "cool_game.exe (LEVEL 67)", MB_OK | MB_ICONINFORMATION);
       return 1;
+
+    case 68:
+      MessageBox(NULL, "Nah bro, I'm actually give up with ideas.", "cool_game.exe (LEVEL 68)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 69:
+      MessageBox(NULL, "I'm starting to think this game is never going to end.", "cool_game.exe (LEVEL 69)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 70:
+      MessageBox(NULL, "30 levels left... We can do this! I- I mean you can do this, keep going!", "cool_game.exe (LEVEL 70)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 71:
+      MessageBox(NULL, "This is my first game btw! (:\nYou maybe don't care...", "cool_game.exe (LEVEL 71)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 72:
+      MessageBox(NULL, "OKAY, back to actual questions.\nI'll try. No promises.", "cool_game.exe (LEVEL 72)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 73:
+      if (MessageBox(NULL, "Is a hot dog a sandwich?", "cool_game.exe (LEVEL 73)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else return 0;
+    case 74:
+      if (MessageBox(NULL, "Is this level a question?", "cool_game.exe (LEVEL 74)", MB_YESNO | MB_ICONINFORMATION) == IDNO) return 1;
+      else return 0;
+    case 75:
+      MessageBox(NULL, "Ha! It was the tricky question!\n25 levels left!!", "cool_game.exe (LEVEL 71)", MB_OK | MB_ICONINFORMATION);
+      return 1;
+    case 76:
+      if (MessageBox(NULL, "Wait... (;<\nWhat is the number of this level?\n\nYES:    75\nNO:     76\nCANCEL: 77\n\nOh, wait, I forget to remove it...", "cool_game.exe (LEVEL 76)", MB_YESNOCANCEL | MB_ICONQUESTION) == IDNO) return 1;
+      else {MessageBox(NULL, "Bruh. How did you even lose it?", "cool_game.exe (LEVEL 76)", MB_OK | MB_ICONEXCLANATION); return 0;}
+    case 77:
+      if (MessageBox(NULL, "Is 77 a prime number?", "cool_game.exe (LEVEL 77)", MB_YESNO | MB_ICONQUESTION) == IDNO) return 1;
+      else return 0;
 
     default:
       MessageBox(NULL, "Bruh, how did you get there? O_o", "Installing the Update", MB_OK | MB_ICONERROR);
