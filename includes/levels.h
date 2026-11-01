@@ -3,6 +3,6 @@
 
 #include <windows.h>
 
-int levels(int number);
+int level(int number);
 
 #endif
